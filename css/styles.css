@@ -82,8 +82,8 @@ a {
 
 .menu-nav li a:hover{
     background-color: #E55934;
-    border-radius: 20%;
-    padding: 5px;
+    border-radius: 100%;
+    padding: 1px;
 }
 
 /*Estilo de fotos */
