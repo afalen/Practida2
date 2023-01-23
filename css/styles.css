@@ -1,0 +1,198 @@
+/*Reseteo CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+} 
+
+img {
+    max-width: 100%;
+}
+
+
+
+/* INDEX */
+
+header {
+    background-color: #632B30;
+    width: 100%; 
+    z-index: 1;
+} 
+
+a {
+    text-decoration: none;
+}
+
+#principal{
+    display: grid;
+    grid-template-areas: 
+    "navegacion"
+    "informacion"
+    "footer";
+    grid-template-columns: repeat(1, 1fr);
+    background-color: green;
+}
+
+
+#headernuevo{
+    grid-area: navegacion;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#headernuevo h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.logo{
+    height: 10rem;
+    width: 15rem;
+}
+
+@media screen and (min-width: 768px) {
+    #headernuevo{
+        flex-direction: row;
+    }
+    .menu-nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    } 
+}
+
+
+.menu-nav{
+    list-style: none;
+    text-align: center;
+    transition: all .5s;
+} 
+
+.menu-nav li a{
+    color: white;
+    font-size: 2rem;
+}
+
+.menu-nav li a:hover{
+    background-color: #E55934;
+    border-radius: 20%;
+    padding: 5px;
+}
+
+/*Estilo de fotos */
+#info{
+    grid-area: informacion;
+}
+#info h1{
+    text-align: center;
+    font-size: 3rem;
+    background-color: #E55934;
+    padding: 2rem;
+    margin: 5rem;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin: 5rem 5rem;
+    padding: 1rem 1rem;
+/*    background-color: #632B30; */
+    background-color: #E55934;
+}
+
+
+.parrafo{
+    align-content: center;
+    width: 30rem;
+    text-align: center;
+} 
+@media screen and (min-width: 768px) {
+    .fotos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    }
+    .reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+}
+
+
+.fotos img{
+    width: 40rem;
+    height: 30rem;
+}
+
+/*Estilo texto*/
+/* #textos{
+    grid-area: textos;
+    margin-top: 2rem;
+}
+
+.parrafos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.parrafos-hijo{
+    text-align: center;
+    font-size: 2rem;
+} */
+
+
+
+
+#footer{
+    grid-area: footer;
+    margin-top: 1rem;
+}
+
+#footer p{
+    font-size: 2rem;
+}
+
+
+
+/* PRODUCTOS */
+
+.fotos p{
+    font-size: 2rem;
+}
+
+.parrafos-hijo{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+    .producto-hijo{
+        flex-direction: row;
+    }
+}
+
+
+.gradiente{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: url("../img/fondopantalla2023.png");
+}
+
+
+
+
+/* CONTACTO */
+/* SOBRE NOSOTROS */
+/* UBICACION */
